@@ -2,11 +2,14 @@ const keep_alive = require("./keep_alive.js")
 const fs = require("fs");
 const login = require("fb-chat-api");
 
+<<<<<<< HEAD
 require('dotenv').config();
 const openai = require('openai');
 openai = process.env.openai;
 
 
+=======
+>>>>>>> b3e61e6 (mao na ni siya)
 const loginCred = {
   appState: JSON.parse(fs.readFileSync("session.json", "utf-8")),
 };
