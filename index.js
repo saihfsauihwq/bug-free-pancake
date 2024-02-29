@@ -4,7 +4,7 @@ const login = require("fb-chat-api");
 
 require('dotenv').config();
 const openai = require('openai');
-openai.api_key = process.env.openai;
+openai = process.env.openai;
 
 
 const loginCred = {
