@@ -149,8 +149,8 @@ const randMes = [
               event.threadID
             );
           }
-          if (event.body.includes("/img")) {
-            event.body = event.body.replace("/img", "");
+          if (event.body.includes("$img")) {
+            event.body = event.body.replace("$img", "");
             require("./functions/imghandler")(api, event);
           } else if (event.body.includes("$$")) {
             event.body = event.body.replace("$$", "");
