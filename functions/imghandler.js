@@ -1,4 +1,4 @@
-const { Configuration, OpenAIApi } = require("openai");
+const { Configuration, OpenAIApi } = require("openai-api");
 const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
@@ -82,17 +82,3 @@ module.exports = async (api, event) => {
       fs.unlink(path, (err) => {
         if (err) {
           console.error(err);
-          return;
-        }
-      });
-    });
-  } catch (error) {
-    console.error(error);
-    if (error == "Error: Request failed with status code 400") {
-      api.sendMessage(
-        "Please send an appropriate request of an image you want to generate...",
-        event.threadID
-      );
-    }
-  }
-};
