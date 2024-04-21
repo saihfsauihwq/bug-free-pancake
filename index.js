@@ -149,6 +149,12 @@ const randMes = [
               event.threadID
             );
           }
+          if (event.body === "pa", "pap") {
+            api.sendMessage(
+              "Pa pap dol",
+              event.threadID
+            );
+          }
           if (event.body.includes("$img")) {
             event.body = event.body.replace("$img", "");
             require("./functions/imghandler")(api, event);
