@@ -149,10 +149,10 @@ const randMes = [
               event.threadID
             );
           }
-          if (event.body === "pap") {
+          if (event.body === "$pap") {
             api.sendMessage(`Papap dol`, event.threadID);
           }
-          if (event.body === "pato") {
+          if (event.body === "$pato") {
             api.sendMessage(`patotoya`, event.threadID);
           }
           if (event.body.includes("$img")) {
