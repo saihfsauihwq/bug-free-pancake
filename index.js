@@ -151,7 +151,7 @@ const randMes = [
           }
           if (event.body === "pa", "pap") {
             api.sendMessage(
-              "Pa pap dol",
+              "Papap dol",
               event.threadID
             );
           }
