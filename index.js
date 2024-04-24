@@ -2,6 +2,10 @@ const keep_alive = require("./keep_alive.js")
 const fs = require("fs");
 const login = require("fb-chat-api");
 
+const loginCred = {
+  appState: JSON.parse(fs.readFileSync("session.json", "utf-8")),
+};
+
 let running = false;
 let stopListener = null;
 
